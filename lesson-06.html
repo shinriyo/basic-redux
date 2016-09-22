@@ -1,0 +1,419 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Lesson 06: Store · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lesson-07.html" />
+    
+    
+    <link rel="prev" href="lesson-05.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a target="_self" href="index.html">
+            
+                    
+                    Redux基礎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="lesson-01.html">
+            
+                <a target="_self" href="lesson-01.html">
+            
+                    
+                    Lesson 01: 環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="lesson-02.html">
+            
+                <a target="_self" href="lesson-02.html">
+            
+                    
+                    Lesson 02: Application state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="lesson-03.html">
+            
+                <a target="_self" href="lesson-03.html">
+            
+                    
+                    Lesson 03: Immutability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="lesson-04.html">
+            
+                <a target="_self" href="lesson-04.html">
+            
+                    
+                    Lesson 04: Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="lesson-05.html">
+            
+                <a target="_self" href="lesson-05.html">
+            
+                    
+                    Lesson 05: Reducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="lesson-06.html">
+            
+                <a target="_self" href="lesson-06.html">
+            
+                    
+                    Lesson 06: Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="lesson-07.html">
+            
+                <a target="_self" href="lesson-07.html">
+            
+                    
+                    Lesson 07: Reducer合成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="lesson-08.html">
+            
+                <a target="_self" href="lesson-08.html">
+            
+                    
+                    Lesson 08: 総合課題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="appendix-01.html">
+            
+                <a target="_self" href="appendix-01.html">
+            
+                    
+                    Appendix 01: ES2015について
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="appendix-02.html">
+            
+                <a target="_self" href="appendix-02.html">
+            
+                    
+                    Appendix 02: react-reduxについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="appendix-03.html">
+            
+                <a target="_self" href="appendix-03.html">
+            
+                    
+                    Appendix 03: middlewareについて
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a target="_self" href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a target="_self" href="." >Lesson 06: Store</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="store">Store</h1><p>application state&#x3092;&#x7BA1;&#x7406;&#x3059;&#x308B;&#x5834;&#x6240;&#x304C;store&#x3067;&#x3059;&#x3002;store&#x306F;&#x5185;&#x90E8;&#x306B;reducer&#x3092;&#x6301;&#x3061;&#x3001;action&#x3092;&#x5165;&#x529B;&#x3068;&#x3057;&#x3066;&#x53D7;&#x3051;&#x53D6;&#x308A;&#x3001;state&#x3092;&#x51FA;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002;</p><h2 id="store&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;">store&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h2><pre><code>const initialState = {
+  inputValue: 0,
+  resultValue: 0,
+  showingResult: false,
+};
+const reducer = (state = initialState, action) =&gt; {
+  if (action.type === &apos;INPUT_NUMBER&apos;) {
+    return { ...state, inputValue: state.inputValue * 10 + action.number; };
+  } else {
+    return state;
+  }
+};
+const store = Redux.createStore(reducer);</code></pre>
+<p>reducer&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3001;&#x305D;&#x308C;&#x3092;&#x3082;&#x3068;&#x306B;store&#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;</p><p>reducer&#x306B;&#x306F;state&#x306E;&#x521D;&#x671F;&#x5024;&#x3092;&#x8A2D;&#x8A08;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
+ES2015&#x306E;default parameters&#x3092;&#x4F7F;&#x3046;&#x3068;&#x7C21;&#x5358;&#x306B;&#x66F8;&#x3051;&#x307E;&#x3059;&#x3002;</p><h2 id="store&#x306B;action&#x3092;&#x767A;&#x884C;&#x3059;&#x308B;">store&#x306B;action&#x3092;&#x767A;&#x884C;&#x3059;&#x308B;</h2><p>&#x4E0A;&#x8A18;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x7D9A;&#x3044;&#x3066;&#x3001;</p><pre><code>const action = { type: &apos;INPUT_NUMBER&apos;, number: 1 };
+store.dispatch(action);</code></pre>
+<p>&#x3068;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;action&#x3092;&#x767A;&#x884C;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x3053;&#x308C;&#x306B;&#x3088;&#x308A;reducer&#x304C;&#x547C;&#x3070;&#x308C;&#x3066;&#x3001;state&#x304C;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p><h2 id="store&#x304B;&#x3089;state&#x3092;&#x53D6;&#x308A;&#x51FA;&#x3059;">store&#x304B;&#x3089;state&#x3092;&#x53D6;&#x308A;&#x51FA;&#x3059;</h2><p>&#x4E0A;&#x8A18;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x7D9A;&#x3044;&#x3066;&#x3001;</p><pre><code>const state = store.getState();</code></pre>
+<p>&#x3068;&#x3059;&#x308B;&#x3068;state&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+&#x3053;&#x308C;&#x306F;&#x305D;&#x306E;&#x6642;&#x70B9;&#x306E;state&#x3067;&#x3042;&#x308A;&#x5909;&#x5316;&#x3057;&#x306A;&#x3044;&#x3082;&#x306E;&#x306A;&#x306E;&#x3067;&#x3001;
+&#x3069;&#x3053;&#x304B;&#x306B;&#x4FDD;&#x5B58;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x3082;&#x69CB;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;
+&#x5B9F;&#x969B;&#x306B;&#x3001;Redux DevTools&#x3067;&#x306F;state&#x3092;&#x4FDD;&#x5B58;&#x3057;&#x3066;&#x518D;&#x5EA6;&#x30D7;&#x30EC;&#x30A4;&#x30D0;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p><h2 id="store&#x306B;&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x3092;&#x767B;&#x9332;&#x3059;&#x308B;">store&#x306B;&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x3092;&#x767B;&#x9332;&#x3059;&#x308B;</h2><p>state&#x3092;&#x53D6;&#x5F97;&#x3057;&#x305F;&#x3044;&#x306E;&#x306F;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x305F;&#x30BF;&#x30A4;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x3059;&#x3002;&#x305D;&#x3053;&#x3067;&#x30EA;&#x30B9;&#x30CA;&#x30FC;&#x3092;&#x767B;&#x9332;&#x3057;&#x3066;&#x66F4;&#x65B0;&#x3092;&#x901A;&#x77E5;&#x3057;&#x3066;&#x3082;&#x3089;&#x3046;&#x65B9;&#x6CD5;&#x304C;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p><pre><code>store.subscribe(() =&gt; {
+  const state = store.getState();
+  console.log(&apos;got state&apos;, state);
+});
+
+store.dispatch({ type: &apos;INPUT_NUMBER&apos;, number: 1 });
+store.dispatch({ type: &apos;INPUT_NUMBER&apos;, number: 2 });
+store.dispatch({ type: &apos;INPUT_NUMBER&apos;, number: 3 });</code></pre>
+<p>React&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;&#x4F8B;&#x3048;&#x3070;&#x5358;&#x7D14;&#x306B;&#x306F;&#x6B21;&#x306E;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p><pre><code>let globalState = {}; // not suitable for real development
+store.subscribe(() =&gt; {
+  globalState = store.getState();
+  render(); // assuming we defined this to render all React components
+});</code></pre>
+<h2 id="&#x8AB2;&#x984C;">&#x8AB2;&#x984C;</h2><ol><li>&#x4E0A;&#x8A18;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x52D5;&#x4F5C;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;
+</li>
+<li>&quot;+&quot;&#x30DC;&#x30BF;&#x30F3;&#x7528;&#x306E;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x305F;reducer&#x306B;&#x62E1;&#x5F35;&#x3057;&#x3066;&#x52D5;&#x4F5C;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;
+</li>
+<li>(&#x6311;&#x6226;) React&#x306E;&#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3067;inputValue&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;
+</li></ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a target="_self" href="lesson-05.html" class="navigation navigation-prev " aria-label="Previous page: Lesson 05: Reducer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a target="_self" href="lesson-07.html" class="navigation navigation-next " aria-label="Next page: Lesson 07: Reducer合成">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lesson 06: Store","level":"1.7","depth":1,"next":{"title":"Lesson 07: Reducer合成","level":"1.8","depth":1,"path":"lesson-07.md","ref":"lesson-07.md","articles":[]},"previous":{"title":"Lesson 05: Reducer","level":"1.6","depth":1,"path":"lesson-05.md","ref":"lesson-05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lesson-06.md","mtime":"2016-09-15T00:39:29.314Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-20T22:23:08.458Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
